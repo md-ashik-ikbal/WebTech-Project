@@ -1,0 +1,105 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+#customerListViewDiv
+{
+    height: fit-content;
+    width: 95%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.475);
+    position: absolute;
+    left: 2.5%;
+    top: 100px;
+    border-radius: 5px;
+}
+
+#customerDeleteErrorMessageDiv
+{
+    height: 60px;
+    width: 100%;
+    background: red;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    /* margin: 3px; */
+    border: 1px solid rgba(0, 0, 0, 0.933);
+}
+
+#customerDeleteErrorMessageDiv h1
+{
+    position: absolute;
+    top: 7px;
+    left: 35%;
+}
+
+#customerListViewDiv table
+{
+    height: fit-content;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.933);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+
+#customerListViewDiv table tr
+{
+    background: #00000033;
+    text-align: center;
+}
+
+#customerListViewDiv table th, td
+{
+    height: 60px;
+    font-size: large;
+}
+
+#customerRemoveButton
+{
+    background: transparent;
+    height: 60px;
+    width: 100%;
+    border: 1px solid red;
+    color: red;
+    text-decoration: none;
+    font-size: large;
+    transition: all ease-in-out 0.5s;
+}
+
+#customerRemoveButton:hover
+{
+    background: red;
+    color: white;
+}
+
+#addCustomerButton
+{
+    background: transparent;
+    height: 60px;
+    width: 100%;
+    /* border-radius: 5px; */
+    border: none;
+    border: 1px solid blue;
+    color: blue;
+    /* font-size: large; */
+    transition: all ease-in-out 0.5s;
+}
+
+#addCustomerButton:hover
+{
+    background: blue;
+    color: white;
+}
+
+.addCustomerInput
+{
+    height: 60px;
+    width: 100%;
+    background: transparent;
+    text-align: center;
+    color: black;
+    border: none;
+    font-size: large;
+}

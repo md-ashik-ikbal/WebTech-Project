@@ -1,0 +1,329 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+
+body
+{
+    background: rgba(2, 2, 255, 0.186);
+    /* background-image: url("../Home/Image/bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 110%; */
+}
+
+#backgroundDiv
+{
+    color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(33px);
+    background-blend-mode: difference;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
+    height: 0vh;
+    width: 90%;
+    border-radius: 10px;
+    position: relative;
+    top: 5vh;
+    left: 5%;
+    /* overflow: hidden; */
+}
+
+#logInFormDiv,
+#createAccountFormDiv
+{
+    box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
+    height: 70vh;
+    width: 50%;
+    border-radius: 10px;
+    position: relative;
+    top: 5vh;
+    left: 27%;
+    overflow: hidden;
+    transition: all ease-in-out 1s;
+}
+
+#logInFormDiv input,
+#createAccountFormDiv input
+{
+    height: 30px;
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 1px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.233);
+    font-size: large;
+    font-weight: 500;
+    transition: all ease-in-out 0.5s;
+}
+
+#logInFormDiv input:hover,
+#createAccountFormDiv input:hover
+{
+    background: rgba(0, 0, 0, 0.068);
+}
+
+#logInFormDiv input:focus,
+#createAccountFormDiv input:focus
+{
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+#logInHeaderDiv,
+#signUpHeaderDiv
+{
+    height: 65px;
+    width: 100%;
+    background: #00000055;
+    text-align: center;
+    position: relative;
+}
+
+#warningDiv
+{
+    height: 40px;
+    width: 90%;
+    background: red;
+    border-radius: 5px;
+    position: absolute;
+    left: 5%;
+    top: 45px;
+    text-align: center;
+    transition: all ease-in-out 0.5s;
+}
+
+#warningDiv h3
+{
+    position: relative;
+    top: 5px;
+    color: white;
+}
+
+#logInEmailDiv,
+#logInPasswordDiv,
+#rememberMeDiv,
+#logInSubmitDiv,
+#logInForgotPasswordDiv,
+#createAccountDiv
+{
+    /* border: 1px solid red; */
+    height: auto;
+    width: 80%;
+    position: relative;
+    top: 40px;
+    left: 10%;
+    margin-top: 10px;
+}
+
+#logInEmailDiv label,
+#logInPasswordDiv label
+{
+    /* background: #000; */
+    position: absolute;
+    top: 2px;
+    /* left: 15px; */
+    font-size: larger;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.732);
+    transition: all ease-in-out 0.5s;
+}
+
+#logInEmailDiv input:focus ~ label,
+#logInEmailDiv input:valid ~ label,
+#logInPasswordDiv input:focus ~ label,
+#logInPasswordDiv input:valid ~ label,
+#logInPasswordDiv input:not([value=""]) ~ label
+
+{
+    top: -25px;
+    font-size: medium;
+}
+
+
+#rememberMeDiv
+{
+    /* background: #00000062; */
+    height: 30px;
+    top: 30px;
+}
+
+#rememberMeDiv label
+{
+    position: absolute;
+    left: 40px;
+    top: 2.5px;
+    color: black;
+    cursor: pointer;
+}
+
+#rememberMeDiv input
+{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+#rememberMeDiv span
+{
+    /* background: #000; */
+    position: absolute;
+    top: 2.5px;
+    right: 25px;
+    color: black;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+#rememberMeDiv span:hover
+{
+    color: blue;
+}
+
+#logInSubmitDiv,
+#logInForgotPasswordDiv,
+#createAccountDiv
+{
+    top: 50px;
+    text-align: center;
+}
+
+#line1
+{
+    height: 1px;
+    width: 100%;
+    position: relative;
+    top: 80px;
+    background: rgba(0, 0, 0, 0.511);
+}
+
+#logInForgotPasswordDiv,
+#createAccountDiv
+{
+    top: 90px;
+}
+
+#createAccountDiv
+{
+    height: 70px;
+}
+
+#signUpBackButton
+{
+    margin: 0%;
+    padding: 0%;
+    width: 8%;
+    height: 30px;
+    position: absolute;
+    top: 0px;
+    left: 92%;
+    /* outline: none; */
+    border: none;
+    background: #0000001e;
+    transition: all ease-in-out 0.5s;
+}
+
+#signUpBackButton:hover
+{
+    background: red;
+}
+
+#logInFormDiv #logInSubmit,
+#createAccountDiv button
+{
+    width: 80%;
+    text-align: center;
+    background: blue;
+    border-radius: 5px;
+    border: none;
+    color: whitesmoke;
+}
+
+#createAccountDiv p
+{
+    margin-bottom: 15px;
+}
+
+#createAccountDiv button
+{
+    font-size: large;
+    height: 45%;
+}
+
+#createAccountFormDiv
+{
+    /* top: -65vh; */
+    height: 0;
+}
+
+#signUpFirstNameDiv,
+#signUpLastNameDiv,
+#signUpPhoneNumberDiv,
+#signUpEmailDiv,
+#signUpPasswordDiv,
+#signUpConfirmPasswordDiv,
+#signUpTermsAndConditionDIv,
+#signUpSubmitDiv
+{
+    /* border: 1px solid red; */
+    height: 60px;
+    width: 40%;
+    position: relative;
+    left: 5%;
+    top: 30px;
+    margin-top: 10px;
+}
+
+#signUpLastNameDiv
+{
+    left: 55%;
+    top: -42px;
+}
+
+#signUpPhoneNumberDiv
+{
+    top: -32px;
+}
+
+#signUpEmailDiv
+{
+    left: 55%;
+    top: -103.5px;
+}
+
+#signUpPasswordDiv
+{
+    top: -94px;
+}
+
+#signUpConfirmPasswordDiv
+{
+    left: 55%;
+    top: -165.5px;
+}
+
+#signUpTermsAndConditionDIv
+{
+    width: 90%;
+    height: 40px;
+    text-align: center;
+    top: -125.5px;
+}
+
+#signUpSubmitDiv
+{
+    width: 90%;
+    top: -75.5px;
+}
+
+#signUpSubmitDiv #submit
+{
+    height: 50%;
+    background: blue;
+    border-radius: 5px;
+    border: none;
+    color: whitesmoke;
+}

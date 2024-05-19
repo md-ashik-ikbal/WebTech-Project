@@ -1,0 +1,280 @@
+.slider
+{
+    height: 600px;
+    width: 70%;
+    background: #000;
+    border-radius: 15px;
+    position: absolute;
+    left: 15%;
+    top: 13%;
+    overflow: hidden;
+}
+
+.slide
+{
+    height: 500px;
+    width: 500%;
+    background: red;
+    /* position: absolute; */
+}
+
+#radio1,
+#radio2,
+#radio3,
+#radio4,
+#radio5
+{
+    display: none;
+}
+
+#radio1:checked ~ .labeldiv .label1,
+#radio2:checked ~ .labeldiv .label2,
+#radio3:checked ~ .labeldiv .label3,
+#radio4:checked ~ .labeldiv .label4,
+#radio5:checked ~ .labeldiv .label5
+{
+    backdrop-filter: brightness(0.5);
+}
+
+.label1,
+.label2,
+.label3,
+.label4,
+.label5
+{
+    width: 50px;
+    height: 8px;
+    border-radius: 1px;
+    backdrop-filter: brightness(0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 575px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.label1:hover,
+.label2:hover,
+.label3:hover,
+.label4:hover,
+.label5:hover
+{
+    /* border: 1px solid rgba(255, 255, 255, 0.284); */
+    backdrop-filter: brightness(0.4);
+}
+
+.label1
+{
+    left: 30%;
+}
+
+.label2
+{
+    left: 40%;
+}
+
+.label3
+{
+    left: 50%;
+}
+
+.label4
+{
+    left: 60%;
+}
+
+.label5
+{
+    left: 70%;
+}
+
+.image1div,
+.image2div,
+.image3div,
+.image4div,
+.image5div
+{
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    transition: all 3s;
+}
+
+.image1,
+.image2,
+.image3,
+.image4,
+.image5
+{
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    transition: all 3s;
+}
+
+.image1div
+{
+    left: 0%;
+}
+
+.image2div
+{
+    left: 100%;
+}
+
+.image3div
+{
+    left: 200%;
+}
+
+.image4div
+{
+    left: 300%;
+}
+
+.image5div
+{
+    left: 400%;
+}
+
+.image1text,
+.image2text,
+.image3text,
+.image4text,
+.image5text
+{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 80px;
+    width: 90%;
+    color: rgba(255, 255, 255, 0.685);
+    text-align: center;
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    border-radius: 5px;
+    padding: 5px;
+    transition: all ease-in-out 0.5s;
+}
+
+.image1text:hover,
+.image2text:hover,
+.image3text:hover,
+.image4text:hover,
+.image5text:hover
+{
+    border: none;
+    outline: 2px solid rgba(255, 255, 255, 0.284);
+    /* background: #0000002c; */
+    color: rgba(255, 255, 255, 0.397);
+    backdrop-filter: blur(20px) brightness(0.7);
+}
+
+/* radio2 checked start */
+#radio2:checked ~ .image1div
+{
+    left: -100%;
+}
+
+#radio2:checked ~ .image2div
+{
+    left: 0%;
+}
+
+#radio2:checked ~ .image3div
+{
+    left: 100%;
+}
+
+#radio2:checked ~ .image4div
+{
+    left: 200%;
+}
+
+#radio2:checked ~ .image5div
+{
+    left: 300%;
+}
+/* radio2 checked end */
+
+/* radio3 checked start */
+#radio3:checked ~ .image1div
+{
+    left: -200%;
+}
+
+#radio3:checked ~ .image2div
+{
+    left: -100%;
+}
+
+#radio3:checked ~ .image3div
+{
+    left: 0px;
+}
+
+#radio3:checked ~ .image4div
+{
+    left: 100%;
+}
+
+#radio3:checked ~ .image5div
+{
+    left: 200%;
+}
+/* radio3 checked end */
+
+/* radio4 checked start */
+#radio4:checked ~ .image1div
+{
+    left: -300%;
+}
+
+#radio4:checked ~ .image2div
+{
+    left: -200%;
+}
+
+#radio4:checked ~ .image3div
+{
+    left: -100%;
+}
+
+#radio4:checked ~ .image4div
+{
+    left: 0%;
+}
+
+#radio4:checked ~ .image5div
+{
+    left: 100%;
+}
+/* radio4 checked end */
+
+/* radio5 checked start */
+#radio5:checked ~ .image1div
+{
+    left: -400%;
+}
+
+#radio5:checked ~ .image2div
+{
+    left: -300%;
+}
+
+#radio5:checked ~ .image3div
+{
+    left: -200%;
+}
+
+#radio5:checked ~ .image4div
+{
+    left: -100%;
+}
+
+#radio5:checked ~ .image5div
+{
+    left: 0%;
+}
+/* radio5 checked end */

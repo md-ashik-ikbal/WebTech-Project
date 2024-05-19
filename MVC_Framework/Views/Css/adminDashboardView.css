@@ -1,0 +1,117 @@
+#mainDiv
+{
+    position: relative;
+}
+
+#welcomeDiv
+{
+    height: auto;
+    width: 100%;
+    background: #00000085;
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    color: white;
+}
+
+#adminListDiv,
+#customerListDiv
+{
+    height: 300px;
+    width: 30%;
+    background: rgba(0, 0, 0, 0.186);
+    position: absolute;
+    top: 100px;
+    left: 10%;
+    overflow: auto;
+    overflow-anchor: none;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#customerListDiv
+{
+    left: 45%;
+}
+
+#adminTableDiv,
+#customerTableDiv
+{
+    height: auto;
+    width: 100%;
+    background: transparent;
+    position: absolute;
+}
+
+#adminTableDiv table,
+#customerTableDiv table
+{
+    height: fit-content;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#adminTableDiv table th,
+#customerTableDiv table th
+{
+    background: rgba(0, 0, 0, 0.848);
+    height: 50px;
+    width: 100%;
+    font-size: larger;
+    position: sticky;
+    top: 0;
+    /* backdrop-filter: brightness(50%); */
+    color: white;
+    border-bottom: 1px solid black;
+}
+
+#adminTableDiv table tr,
+#customerTableDiv table tr
+{
+    height: 30px;
+}
+
+#adminTableDiv table tr:nth-child(odd),
+#customerTableDiv table tr:nth-child(odd)
+{
+    background: #00000048;
+}
+
+#adminTableDiv table tr:nth-child(even),
+#customerTableDiv table tr:nth-child(even)
+{
+    backdrop-filter: brightness(90%);
+}
+
+#adminTableDiv table td,
+#customerTableDiv table td
+{
+    /* border: 1px solid blue; */
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+#viewAllAdminButton,
+#viewAllCustomerButton
+{
+    background: transparent;
+    backdrop-filter: brightness(0.7) blur(8px);
+    border: none;
+    height: 40px;
+    width: 100%;
+    position: sticky;
+    left: 0%;
+    top: 260px;
+    font-size: large;
+    color: whitesmoke;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top: 1px solid black;
+    transition: all ease-in-out 0.5s;
+}
+
+#viewAllAdminButton:hover,
+#viewAllCustomerButton:hover
+{
+    backdrop-filter: brightness(0.5) blur(5px);
+}

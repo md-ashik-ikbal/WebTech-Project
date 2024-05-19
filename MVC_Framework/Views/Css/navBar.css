@@ -1,0 +1,263 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+input:focus
+{
+    outline: none;
+}
+
+#navBarDiv
+{
+    height: 50px;
+    width: 100%;
+    background: transparent;
+    backdrop-filter: blur(20px) brightness(0.6);
+    border-bottom: 1px solid white;
+    position: fixed;
+    z-index: 5;
+}
+
+#navbarTextDiv,
+#navbarSearchDiv,
+#navBarActionsDiv
+{
+    background: transparent;
+    position: absolute;
+}
+
+#navbarTextDiv
+{
+    height: 100%;
+    width: 10%;
+    left: 2%;
+    top: 10%;
+}
+
+#navbarTextDiv a
+{
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+    transition: all ease-in-out 0.5s;
+}
+
+#navbarTextDiv a h1
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+
+#navbarTextDiv a:hover
+{
+    color: blue;
+}
+
+#navbarSearchDiv
+{
+    height: 50px;
+    width: 30%;
+    left: 30%;
+    position: relative;
+}
+
+#searchBar
+{
+    height: 35px;
+    width: 90%;
+    background: transparent;
+    padding: 10px;
+    position: absolute;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+    top: 7px;
+    left: 0;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border: 1px solid blue;
+    transition: all ease-in-out 0.5s;
+}
+
+#searchBar::placeholder{
+    color: white;
+}
+
+#navbarSearchDiv button
+{
+    height: 35px;
+    width: 50px;
+    background: transparent;
+    position: absolute;
+    right: -4px;
+    top: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border: 1px solid blue;
+    /* border-left: 2px solid #002fffd4; */
+    cursor: pointer;
+}
+
+#navbarSearchDiv button img
+{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
+
+#navBarActionsDiv
+{
+    height: 50px;
+    width: 30%;
+    /* border: 2px solid rgb(255, 0, 0); */
+    left: 70%;
+    top: 0%;
+}
+
+#logInSignUpDiv
+{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 5px;
+    left: 90%;
+}
+
+#logInSignUpDiv button
+{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    clip-path: circle(50%);
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+
+#logInSignUpDiv button img
+{
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    transition: all ease-in-out 0.5s;
+}
+
+#logInSignUpDiv img:hover
+{
+    filter: brightness(50%);
+}
+
+#showHideDiv
+{
+    height: 0px;
+    width: 300px;
+    backdrop-filter: brightness(0.5) blur(20px);
+    border-radius: 5px;
+    position: fixed;
+    top: 60px;
+    right: 9px;
+    overflow: hidden;
+    z-index: 50;
+    transition: all ease-in-out 1s;
+}
+
+/* #profileDiv
+{
+    border-radius: 5px;
+    height: 50px;
+    width: 300px;
+    position: relative;
+} */
+
+#profileDiv button
+{
+    background: rgba(0, 0, 0, 0.364);
+    backdrop-filter: blur(3px);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 290px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+
+#profileDiv button:hover
+{
+    background: #0000004b;
+}
+
+#profileDiv button img
+{
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 3px;
+    transition: all ease-in-out 0.5s;
+}
+
+#profileDiv button h3
+{
+    /* color: rgba(0, 0, 0, 0.841); */
+    filter: invert(100%);
+    position: absolute;
+    left: 55px;
+    top: 7px;
+    padding: 5px;
+}
+
+#profileEditButton
+{
+    height: 40px;
+    width: 290px;
+    /* background: #000; */
+    background: transparent;
+    border: 2px solid rgb(8, 0, 255);
+    border-radius: 5px;
+    color: rgb(8, 0, 255);
+    font-size: large;
+    position: absolute;
+    top: 60px;
+    left: 5px;
+    transition: all ease-in-out 0.5s;
+}
+
+#profileEditButton:hover
+{
+    background: rgb(8, 0, 255);
+    color: white;
+}
+
+#logOutButton
+{
+    height: 40px;
+    width: 290px;
+    /* background: #000; */
+    background: transparent;
+    border: 2px solid red;
+    border-radius: 5px;
+    color: rgb(255, 0, 0);
+    font-size: large;
+    position: absolute;
+    top: 255px;
+    left: 5px;
+    transition: all ease-in-out 0.5s;
+}
+
+#logOutButton:hover
+{
+    background: rgba(255, 0, 0, 0.682);
+    color: white;
+}

@@ -1,0 +1,105 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+#adminListViewDiv
+{
+    height: fit-content;
+    width: 95%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.475);
+    position: absolute;
+    left: 2.5%;
+    top: 100px;
+    border-radius: 5px;
+}
+
+#adminDeleteErrorMessageDiv
+{
+    height: 60px;
+    width: 100%;
+    background: red;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    /* margin: 3px; */
+    border: 1px solid rgba(0, 0, 0, 0.933);
+}
+
+#adminDeleteErrorMessageDiv h1
+{
+    position: absolute;
+    top: 7px;
+    left: 35%;
+}
+
+#adminListViewDiv table
+{
+    height: fit-content;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.933);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+
+#adminListViewDiv table tr
+{
+    background: #00000033;
+    text-align: center;
+}
+
+#adminListViewDiv table th, td
+{
+    height: 60px;
+    font-size: large;
+}
+
+#adminRemoveButton
+{
+    background: transparent;
+    height: 60px;
+    width: 100%;
+    border: 1px solid red;
+    color: red;
+    text-decoration: none;
+    font-size: large;
+    transition: all ease-in-out 0.5s;
+}
+
+#adminRemoveButton:hover
+{
+    background: red;
+    color: white;
+}
+
+#addAdminButton
+{
+    background: transparent;
+    height: 60px;
+    width: 100%;
+    /* border-radius: 5px; */
+    border: none;
+    border: 1px solid blue;
+    color: blue;
+    /* font-size: large; */
+    transition: all ease-in-out 0.5s;
+}
+
+#addAdminButton:hover
+{
+    background: blue;
+    color: white;
+}
+
+.addAdminInput
+{
+    height: 60px;
+    width: 100%;
+    background: transparent;
+    text-align: center;
+    color: black;
+    border: none;
+    font-size: large;
+}
